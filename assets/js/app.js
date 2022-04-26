@@ -9,6 +9,7 @@ $(function() {
     checkScroll(scrollOffset);
 
     $(window).on ("scroll load resize", function() {
+        introH = $("#intro").innerHeight();
         scrollOffset = $(this).scrollTop();
 
         checkScroll(scrollOffset);
