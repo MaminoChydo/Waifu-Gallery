@@ -8,7 +8,7 @@ $(function() {
     /* Fixed Header */ 
     checkScroll(scrollOffset);
 
-    $(window).on ("scroll", function() {
+    $(window).on ("scroll load", function() {
         scrollOffset = $(this).scrollTop();
 
         checkScroll(scrollOffset);
